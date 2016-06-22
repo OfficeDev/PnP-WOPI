@@ -109,3 +109,5 @@ One of the challenges of implementing the WOPI endpoints with WebAPI is that mos
     }
 
 Most of the WOPI logic exists in the **WOPIExtensions.cs** and **WOPIUtils.cs** files. The **WOPIExtensions.cs** file contains extension methods for each WOPI operation and the **WOPIUtils.cs** contains utility methods for doing things such as WOPI discovery (which lists all the actions and proof keys for the WOPI integration), validating WOPI proof (ie - proving that the WOPI request actually came from Office Online), and a number of important WOPI constants (like the numerous custom headers WOPI uses).
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
