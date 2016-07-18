@@ -247,7 +247,7 @@ namespace com.microsoft.dx.officewopi.Utils
             }
 
             return wopiProof;
-        } 
+        }
     }
 
     /// <summary>
@@ -301,7 +301,7 @@ namespace com.microsoft.dx.officewopi.Utils
     {
         public static List<string> Placeholders = new List<string>() { BUSINESS_USER,
             DC_LLCC, DISABLE_ASYNC, DISABLE_CHAT, DISABLE_BROADCAST,
-            EMBDDED, FULLSCREEN, PERFSTATS, RECORDING, THEME_ID, UI_LLCC
+            EMBDDED, FULLSCREEN, PERFSTATS, RECORDING, THEME_ID, UI_LLCC, VALIDATOR_TEST_CATEGORY
         };
         public const string BUSINESS_USER = "<IsLicensedUser=BUSINESS_USER&>";
         public const string DC_LLCC = "<rs=DC_LLCC&>";
@@ -314,6 +314,7 @@ namespace com.microsoft.dx.officewopi.Utils
         public const string RECORDING = "<rec=RECORDING&>";
         public const string THEME_ID = "<thm=THEME_ID&>";
         public const string UI_LLCC = "<ui=UI_LLCC&>";
+        public const string VALIDATOR_TEST_CATEGORY = "<testcategory=VALIDATOR_TEST_CATEGORY>";
 
         /// <summary>
         /// Sets a specific WOPI URL placeholder with the correct value
@@ -347,10 +348,13 @@ namespace com.microsoft.dx.officewopi.Utils
                 case PERFSTATS:
                     result = ""; // No documentation
                     break;
+                case VALIDATOR_TEST_CATEGORY:
+                    result = ph + "OfficeOnline"; //This value can be set to All, OfficeOnline or OfficeNativeClient to activate tests specific to Office Online and Office for iOS. If omitted, the default value is All.
+                    break;
                 default:
                     result = "";
                     break;
-                
+
             }
 
             return result;
