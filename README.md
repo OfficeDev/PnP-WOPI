@@ -1,3 +1,13 @@
+---
+topic: sample
+products:
+- Office 365
+languages:
+- C#
+extensions:
+  contentType: samples
+  createdDate: 1/14/2016 6:35:35 AM
+---
 # PnP-WOPI
 This repository contains an application that integrates with Office Online for viewing/editing Office documents. This type of integration classifies this application as a WOPI host. WOPI (Web Application Open Platform Interface) is a protocol for integrating with Office Online and is documented in detail at [https://wopi.readthedocs.org](https://wopi.readthedocs.org "https://wopi.readthedocs.org"). This sample illustrates many important patterns and practices for implementing a WOPI host, a number of which are outlined in this readme. 
 
