@@ -11,8 +11,6 @@ extensions:
 # PnP-WOPI
 This repository contains an application that integrates with Office Online for viewing/editing Office documents. This type of integration classifies this application as a WOPI host. WOPI (Web Application Open Platform Interface) is a protocol for integrating with Office Online and is documented in detail at [https://wopi.readthedocs.org](https://wopi.readthedocs.org "https://wopi.readthedocs.org"). This sample illustrates many important patterns and practices for implementing a WOPI host, a number of which are outlined in this readme. 
 
-This WOPI host implementation is deployed to [https://officewopi.azurewebsites.net](https://officewopi.azurewebsites.net "https://officewopi.azurewebsites.net") and can be used/tested by anyone with an organization/student account registered with Microsoft (read: Office 365 logins). It is provided for testing/experimenting purposes and offered with no service level agreement.
-
 > NOTE: You cannot simply clone and run this sample locally. Integrating with Office Online requires that your host domain is white-listed by Microsoft. The first step to white-listing a domain is to join the Cloud Storage Provider Program detail [HERE](http://dev.office.com/programs/officecloudstorage "HERE"). Additionally, a WOPI host must expose endpoints to the internet that Office Online can communicate with (read: localhost probably won't work).
 
 ## Solution Overview ##
